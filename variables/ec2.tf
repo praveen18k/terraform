@@ -1,6 +1,8 @@
 resource "aws_instance" "roboshop"{
-    ami = "ami-0f3c7d07486cad139"
-    instance_type = "t2.micro"
+    ami = var.ami_id 
+    instance_type = var.instance_type
+    security_groups = [aws_security_group.Allow-all-1.name]
+    
 }
 
 
