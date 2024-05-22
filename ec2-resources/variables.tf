@@ -8,7 +8,7 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "aws_security_group"{
-    type = string
-    default = "Allow-all-1"
-}
+# variable "aws_security_group"{
+#     type = string
+#     default = "Allow-all-1"
+# }
