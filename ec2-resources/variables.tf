@@ -12,3 +12,8 @@ variable "instance_type" {
 #     type = string
 #     default = "Allow-all-1"
 # }
+
+# variable "aws_security_group" "sg_group" {
+#   #type = string
+#   default = "sg-0fe71a2fcfe383dcc"
+# }
