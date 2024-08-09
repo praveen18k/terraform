@@ -12,6 +12,17 @@ variable "sg_name" {
 }
 
 variable "sg_cidr" {
-  type    = list
+  type    = list(any)
   default = ["0.0.0.0/0"] #this is list
+}
+variable "tags" {
+  type = map(any)
+  default = {
+    name        = "webserver"
+    environment = "dev"
+    project     = "mycareer"
+    cost_center = "cc_cam"
+
+  }
+
 }
