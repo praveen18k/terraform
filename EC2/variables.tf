@@ -12,17 +12,18 @@ variable "sg_name" {
 }
 
 variable "sg_cidr" {
-  type    = list(any)
+  type    = list
   default = ["0.0.0.0/0"] #this is list
 }
-variable "tags" {
-  type = map(any)
+
+variable "ec2_tags" {
+  type = map
   default = {
     name        = "MongoDB"
-    environment = "dev"
-    terraform   = "true"
-    project     = "mycareer"
-    cost_center = "cc_cam"
+      environment = "dev"
+      terraform   = "true"
+      project     = "mycareer"
+      cost_center = "cc_cam"
 
   }
 
