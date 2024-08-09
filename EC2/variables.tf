@@ -18,8 +18,9 @@ variable "sg_cidr" {
 variable "tags" {
   type = map(any)
   default = {
-    name        = "webserver"
+    name        = "MongoDB"
     environment = "dev"
+    terraform   = "true"
     project     = "mycareer"
     cost_center = "cc_cam"
 
