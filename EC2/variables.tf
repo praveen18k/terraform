@@ -6,3 +6,12 @@ variable "ami_id" {
 variable "instance_type" {
   default = "t2.micro"
 }
+
+variable "sg_name" {
+  default = "allow_all"
+}
+
+variable "sg_cidr" {
+  type    = list
+  default = ["0.0.0.0/0"] #this is list
+}
