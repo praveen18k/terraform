@@ -6,3 +6,8 @@ variable "ami_id" {
 variable "instance_type" {
   default = "t2.micro"
 }
+
+variable "instance_names" {
+  type    = list(any)
+  default = ["MongoDB", "Cart", "Catalogue", "User", "Redis"]
+}
