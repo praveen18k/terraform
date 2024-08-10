@@ -15,3 +15,8 @@ resource "aws_route53_record" "record"{
     ttl = 1
     records = [aws_instance.conditions[count.index].private_ip]
 }
+
+resource "aws_key_pair" "deployer"{
+    key_name = "deployer-key"
+    public_key = file("${path.module}/daws74s.pub")
+}
