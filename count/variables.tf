@@ -11,3 +11,11 @@ variable "instance_names" {
   type    = list(any)
   default = ["MongoDB", "Cart", "Catalogue", "User", "Redis"]
 }
+
+variable "zone_id" {
+  default = ""
+}
+
+variable "domain" {
+  default = "awsdevops.icu"
+}
