@@ -10,7 +10,16 @@ variable "ami_id" {
 variable "instances" {
   type = map
   default = {
+    Web     = "t2.micro"
     MongoDB   = "t2.medium"
     Redis     = "t2.micro"
   }
+}
+
+variable "zone_id" {
+  default = "Z02678062G6UOXQUMHK56"
+}
+
+variable "domain" {
+  default = "awsdevops.icu"
 }
