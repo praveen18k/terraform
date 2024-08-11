@@ -10,10 +10,7 @@ variable "ami_id" {
 variable "instances" {
   type = map
   default = {
-    MongoDB   = "t3.medium"
-    MySQL     = "t3.medium"
+    MongoDB   = "t2.medium"
     Redis     = "t2.micro"
-    Catalogue = "t2.micro"
-    User      = "t2.micro"
   }
 }
