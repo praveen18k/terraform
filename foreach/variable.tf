@@ -8,11 +8,11 @@ variable "ami_id" {
 # }
 
 variable "instances" {
-  type = map
+  type = map(any)
   default = {
     Web     = "t2.micro"
-    MongoDB   = "t2.medium"
-    Redis     = "t2.micro"
+    #MongoDB = "t2.medium"
+    Redis   = "t2.micro"
   }
 }
 

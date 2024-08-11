@@ -18,6 +18,6 @@ resource "aws_route53_record" "www" {
   name     = "${each.key}.${var.domain}"
   type     = "A"
   ttl      = 1
-  records  = [each.key == "web" ? each.value.public_ip : each.value.private_ip]
+  records  = [each.key == "Web" ? each.value.public_ip : each.value.private_ip]
 }
 
