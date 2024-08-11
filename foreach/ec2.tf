@@ -1,8 +1,9 @@
 resource "aws_instance" "roboshop" {
-  ami = var.ami_id
-  instance_type = var.instance_type
+  for_each      = var.instances
+  ami           = var.ami_id
+  instance_type = each.value
 }
 
-output "aws_instance_info" {
-  value = aws_instance.roboshop
-}
+# output "aws_instance_info" {
+#   value = aws_instance.roboshop
+# }
