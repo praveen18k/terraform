@@ -1,3 +1,6 @@
+#value mentioned in variable.tf are default values
+#we can always override them
+
 variable "ami_id" {
   type    = string
   default = "ami-0b4f379183e5706b9"
@@ -23,8 +26,9 @@ variable "domain" {
   default = "awsdevops.icu"
 }
 
+# declaring variables but not providing value
 variable "sg_name" {
-  default = "allow_all"
+  type = string
 }
 
 variable "sg_cidr" {
