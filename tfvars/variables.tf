@@ -14,7 +14,7 @@ variable "instances" {
   type = map(any)
   default = {
     MongoDB = "t2.micro"
-    Redis   = "t2.micro"
+    Web   = "t2.micro"
   }
 }
 
